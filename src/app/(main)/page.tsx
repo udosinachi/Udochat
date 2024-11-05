@@ -3,10 +3,12 @@ import TrendsSidebar from "@/components/TrendsSideBar";
 import ForYouFeed from "./ForYouFeed";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import FollowingFeed from "./FollowingFeed";
+import { LoadScript } from "./LoadScript";
 
 export default async function Home() {
   return (
     <main className="flex w-full min-w-0 gap-5">
+      <LoadScript />
       <div className="w-full min-w-0 space-y-5">
         <PostEditor />
         <Tabs defaultValue="for-you">
